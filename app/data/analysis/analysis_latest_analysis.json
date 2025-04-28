@@ -1,0 +1,88 @@
+{
+  "classification": {
+    "basic_info": {
+      "agent_name": "Novel",
+      "customer_name": "Jalaluddin",
+      "scenario_type": "REFUSE_TO_PAY",
+      "classification_reason": "The customer did not provide a specific payment date and expressed inability to pay due to external circumstances (rain affecting harvest).",
+      "call_duration": null,
+      "amounts_mentioned": [
+        {
+          "value": 6364000.0,
+          "currenct": "IDR",
+          "type": "outstanding amount"
+        }
+      ],
+      "payment_date_mentioned": null
+    },
+    "ptp_details": null,
+    "refuse_details": {
+      "reason": "Unable to pay due to rain affecting harvest.",
+      "customer_situation": "Customer is unable to harvest due to rain, affecting his ability to pay.",
+      "refusal_type": "explicit",
+      "solutions_discussed": [
+        "Agent suggested paying twice a month, but customer did not commit to a date."
+      ]
+    },
+    "tpc_details": null,
+    "call_summary": "The agent from BV Finance, named Novel, contacted the customer, Jalaluddin, regarding an outstanding payment of IDR 6,364,000. The customer expressed inability to pay due to rain affecting his harvest and did not provide a specific payment date. The agent suggested paying twice a month, but the customer did not commit to any date."
+  },
+  "qa_score": {
+    "scenario_type": "REFUSE_TO_PAY",
+    "opening_score": {
+      "greeting_score": "0.5",
+      "greeting_evidence": "Halo selamat pagi Rp. 4.000, Bapak. Untuk angkusan BV-nya, apakah sudah bisa dibayarkannya hari ini, Bapak Jalaluddin?",
+      "customer_name_verification": "COMPLIANT",
+      "customer_verification_evidence": "Bapak Jalaluddin",
+      "mandatory_info_disclosed": [
+        "payment amount",
+        "past due"
+      ]
+    },
+    "communication_score": {
+      "voice_tone_score": "0.5",
+      "voice_tone_evidence": "Professional but lacks energy",
+      "speaking_pace_score": "0.5",
+      "speaking_pace_evidence": "Clear but slightly rushed",
+      "language_etiquette_score": "0.5",
+      "language_evidence": [
+        "Iya ini tau-tau telfonnya by system Pak",
+        "Jadi sekarang bisa dibayarkan dua kali kan di tanggal berapa?"
+      ]
+    },
+    "negotiation_score": {
+      "negotiation_attempts": 2,
+      "solutions_offered": [
+        "payment in two installments"
+      ],
+      "payment_commitment_obtained": false,
+      "negotiation_evidence": [
+        "Jadi sekarang bisa dibayarkan dua kali kan di tanggal berapa?",
+        "Di tanggal berapa bisa dibayar?"
+      ]
+    },
+    "knockout_violations": {
+      "unauthorized_disclosure": false,
+      "disclosure_evidence": null,
+      "ptp_cheating": false,
+      "ptp_cheating_evidence": null,
+      "other_violations": []
+    },
+    "total_score": 0.55,
+    "score_breakdown": {
+      "opening": 0.0,
+      "communication": 0.0,
+      "negotiation": 0.0
+    },
+    "improvement_areas": [
+      "Improve greeting energy",
+      "Enhance negotiation effectiveness",
+      "Explore more solutions"
+    ],
+    "evidence_highlights": [
+      "Greeting: Halo selamat pagi Rp. 4.000, Bapak.",
+      "Customer verification: Bapak Jalaluddin",
+      "Negotiation attempt: Jadi sekarang bisa dibayarkan dua kali kan di tanggal berapa?"
+    ]
+  }
+}

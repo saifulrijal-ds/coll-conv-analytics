@@ -1,0 +1,97 @@
+{
+  "classification": {
+    "basic_info": {
+      "agent_name": null,
+      "customer_name": "Pak Glenn",
+      "scenario_type": "PTP",
+      "classification_reason": "The customer explicitly confirmed the payment date as 'tanggal 7 hari ini' which indicates a promise to pay on the specified date.",
+      "call_duration": null,
+      "amounts_mentioned": [
+        {
+          "value": 421000.0,
+          "currenct": "IDR",
+          "type": "nominal"
+        },
+        {
+          "value": 33680.0,
+          "currenct": "IDR",
+          "type": "denda"
+        }
+      ],
+      "payment_date_mentioned": "tanggal 7 hari ini"
+    },
+    "ptp_details": {
+      "promised_date": "tanggal 7 hari ini",
+      "promised_amount": {
+        "value": 421000.0,
+        "currenct": "IDR",
+        "type": "nominal"
+      },
+      "negotiation_attempts": null,
+      "commitment_strength": "strong",
+      "commitment_phrases": [
+        "Bapak akan bayarkan tanggal 7 hari ini",
+        "ditunggu hari ini ya Pak ya"
+      ]
+    },
+    "refuse_details": null,
+    "tpc_details": null,
+    "call_summary": "The call involves a promise to pay scenario where the customer, Pak Glenn, confirmed to make a payment on the specified date, 'tanggal 7 hari ini'. The agent confirmed the payment method and amount, and the customer showed a strong commitment to pay by the end of the day."
+  },
+  "qa_score": {
+    "scenario_type": "PTP",
+    "opening_score": {
+      "greeting_score": "0.5",
+      "greeting_evidence": "Selamat pagi, se",
+      "customer_name_verification": "COMPLIANT",
+      "customer_verification_evidence": "Bapak Glenn",
+      "mandatory_info_disclosed": [
+        "payment amount Rp421.000",
+        "penalty Rp33.680"
+      ]
+    },
+    "communication_score": {
+      "voice_tone_score": "0.5",
+      "voice_tone_evidence": "Professional but lacks energy",
+      "speaking_pace_score": "0.5",
+      "speaking_pace_evidence": "Clear but slightly rushed",
+      "language_etiquette_score": "0.5",
+      "language_evidence": [
+        "Terima kasih komitmen pembayarannya",
+        "Baik jika begitu"
+      ]
+    },
+    "negotiation_score": {
+      "negotiation_attempts": 1,
+      "solutions_offered": [
+        "Payment through Indomaret"
+      ],
+      "payment_commitment_obtained": true,
+      "negotiation_evidence": [
+        "Saya konfirmasi Bapak akan bayarkan tanggal 7 hari ini"
+      ]
+    },
+    "knockout_violations": {
+      "unauthorized_disclosure": false,
+      "disclosure_evidence": null,
+      "ptp_cheating": false,
+      "ptp_cheating_evidence": null,
+      "other_violations": []
+    },
+    "total_score": 0.65,
+    "score_breakdown": {
+      "opening": 0.0,
+      "communication": 0.0,
+      "negotiation": 0.0
+    },
+    "improvement_areas": [
+      "Increase energy in voice tone",
+      "Improve speaking pace",
+      "Enhance language etiquette"
+    ],
+    "evidence_highlights": [
+      "Confirmation of payment date and amount",
+      "Professional language usage"
+    ]
+  }
+}
